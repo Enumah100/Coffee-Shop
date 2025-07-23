@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+
+        .menu-banner {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .menu-banner img {
+            max-width: 90%;
+            width: 700px; /* Max width on larger screens */
+            height: auto;
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .menu-section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .menu-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: #4CAF50;
+        }
+
+        .menu-section p {
+            font-size: 1.2rem;
+            color: #555;
+            margin-bottom: 40px;
+        }
+
+        .menu-category {
+            margin-bottom: 40px;
+        }
+
+        .menu-category h3 {
+            font-size: 1.8rem;
+            color: #6D4C41;
+            margin-bottom: 25px;
+            border-bottom: 2px solid #E0B286;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        .menu-category ul {
+            list-style: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: 1fr; /* Default: single column for mobile first */
+            gap: 30px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .menu-category li {
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 15px;
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            text-align: left;
+        }
+
+        .menu-icon {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+            flex-shrink: 0;
+        }
+
+        /* --- Media Queries for Responsiveness --- */
+
+        /* For screens larger than or equal to 768px (Tablets and Desktops) */
+        @media (min-width: 768px) {
+            .menu-category ul {
+                grid-template-columns: 1fr 1fr; /* Two columns for larger screens */
+            }
+        }
+
+        /* For screens smaller than or equal to 767px (Phones and small tablets) */
+        @media (max-width: 767px) {
+            .menu-banner img {
+                max-width: 95%; /* Adjust image size for smaller screens */
+                width: auto;
+            }
+
+            .menu-section {
+                padding: 40px 15px; /* Reduce padding */
+            }
+
+            .menu-section h2 {
+                font-size: 2rem; /* Reduce font size */
+            }
+
+            .menu-section p {
+                font-size: 1rem; /* Reduce font size */
+                margin-bottom: 30px;
+            }
+
+            .menu-category h3 {
+                font-size: 1.6rem; /* Reduce font size */
+            }
+
+            .menu-category ul {
+                gap: 20px; /* Reduce gap */
+            }
+
+            .menu-category li {
+                font-size: 1rem; /* Reduce font size for list items */
+                padding: 12px; /* Adjust padding */
+                gap: 10px; /* Reduce gap */
+            }
+
+            .menu-icon {
+                width: 60px; /* Smaller icons on smaller screens */
+                height: 60px;
+            }
+        }
+
+        /* For very small screens, e.g., max-width 480px */
+        @media (max-width: 480px) {
+            .menu-section {
+                padding: 30px 10px;
+            }
+
+            .menu-section h2 {
+                font-size: 1.8rem;
+            }
+
+            .menu-section p {
+                font-size: 0.9rem;
+            }
+
+            .menu-category h3 {
+                font-size: 1.4rem;
+            }
+
+            .menu-category li {
+                flex-direction: column; /* Stack image and text vertically */
+                align-items: center; /* Center items when stacked */
+                text-align: center; /* Center text when stacked */
+                gap: 5px; /* Smaller gap when stacked */
+                padding: 10px;
+            }
+
+            .menu-icon {
+                margin-bottom: 5px; /* Add some space below the icon when stacked */
+            }
+        }
+    </style>
+</head>
+<body>
+    <section id="menu" class="menu-section">
+        <div class="menu-banner">
+            <img src="images/iced coffee11.jpg" alt="Explore Our Coffee" />
+        </div>
+
+        <h2>Explore Our Menu</h2>
+        <p>From rich espresso shots to flaky pastries, taste the best in every sip and bite.</p>
+
+        <div class="menu-category">
+            <h3>Hot Beverages</h3>
+            <ul>
+                <li>
+                    <img src="images/Coffee Frappe.png" alt="Espresso" class="menu-icon">
+                    Espresso — ₦1,200
+                </li>
+                <li>
+                    <img src="images/copora Frrape Mix.png" alt="Cappuccino" class="menu-icon">
+                    Cappuccino — ₦1,500
+                </li>
+                <li>
+                    <img src="images/latte5.jpg" alt="Café Latte" class="menu-icon">
+                    Café Latte — ₦1,400
+                </li>
+                <li>
+                    <img src="images/cuppacucino.png" alt="Croissant" class="menu-icon">
+                    Croissant — ₦900
+                </li>
+                <li>
+                    <img src="images/un named9.webp" alt="Americano" class="menu-icon">
+                    Americano — ₦1,200
+                </li>
+                <li>
+                    <img src="images/latte6.webp" alt="Latte" class="menu-icon">
+                    Latte — ₦1,400
+                </li>
+                <li>
+                    <img src="images/iced coffee11.jpg" alt="Iced Coffee" class="menu-icon">
+                    Iced Coffee — ₦1,900
+                </li>
+                <li>
+                    <img src="images/iced coffee16.jpg" alt="Iced Coffee" class="menu-icon">
+                    Iced Coffee — ₦1,800
+                </li>
+            </ul>
+        </div>
+
+        <div class="menu-category">
+            <h3>Snacks & Pastries</h3>
+            <ul>
+                <li>
+                    <img src="images/Cuppaccino3.png" alt="Muffin" class="menu-icon">
+                    Chocolate Muffin — ₦700
+                </li>
+                <li>
+                    <img src="images/cuppacucino.png" alt="Croissant" class="menu-icon">
+                    Croissant — ₦900
+                </li>
+                <li>
+                    <img src="images/iced coffee6.webp" alt="Iced Coffee" class="menu-icon">
+                    Iced Coffee — ₦900
+                </li>
+                <li>
+                    <img src="images/iced coffee12.png" alt="Iced Coffee" class="menu-icon">
+                    Iced Coffee — ₦2,100
+                </li>
+                <li>
+                    <img src="images/chocolate Coffee Frappe.png" alt="Chocolate Coffee Frappe" class="menu-icon">
+                    Chocolate Coffee Frappe — ₦2,000
+                </li>
+                <li>
+                    <img src="images/latte3.jpg" alt="Latte" class="menu-icon">
+                    Latte — ₦900
+                </li>
+                <li>
+                    <img src="images/latte4.jpg" alt="Latte" class="menu-icon">
+                    Latte — ₦1,000
+                </li>
+                <li>
+                    <img src="images/latte5.jpg" alt="Latte" class="menu-icon">
+                    Latte — ₦1,300
+                </li>
+            </ul>
+        </div>
+    </section>
+</body>
+</html>
